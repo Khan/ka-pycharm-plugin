@@ -11,6 +11,7 @@ configurations compatible with Khan Academy's test infrastructure.
 
 Download the latest jar from the
 ["Getting Started" Forge page](https://sites.google.com/a/khanacademy.org/forge/for-developers/using-pycharm-at-khan-academy/getting-started-with-pycharm)
+
 In the PyCharm preferences, go to the Plugins section, and click "Install Plugin from Disk", then
 navigate to the JAR from that page.
 
