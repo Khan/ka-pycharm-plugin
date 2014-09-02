@@ -1,0 +1,36 @@
+<idea-plugin version="2">
+  <id>org.khanacademy.pycharmplugin</id>
+  <name>Khan Academy PyCharm Plugin</name>
+  <version>1.0</version>
+
+  <description><![CDATA[
+      <p>PyCharm plugin for developers at Khan Academy.</p>
+
+      <p>Currently, the only feature is that it makes it easy to run KA Python tests from within the
+      IDE using the standard context menu options. The run configurations produced by the plugin
+      handle the sys.path and global state changes that normally are done by tools/runtests.py.</p>
+    ]]></description>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.python</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+      <runConfigurationProducer implementation="org.khanacademy.pycharmplugin.KATestConfigurationProducer"/>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
