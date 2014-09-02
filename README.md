@@ -24,9 +24,8 @@ For now, here are some instructions from memory that may be helpful:
 1. Install IntelliJ IDEA Community Edition.
 2. Open the repo as an IntelliJ project.
 3. Choose your PyCharm installation as the plugin development SDK.
-4. Make a run configuration form within IntelliJ and run it the plugin from within IntelliJ. If
-things work, it will launch a fresh PyCharm instance with the plugin installed, which you can use
-for testing.
+4. Make a run configuration from within IntelliJ and run it. If things work, it will launch a fresh
+PyCharm instance with the plugin installed, which you can use for testing.
 5. Run the "Prepare To Deploy" action. It will produce a KAPyCharmPlugin.jar file, which is the
 plugin binary.
 6. To learn the API, the best approach is to get the high-level details and possibilities from the
