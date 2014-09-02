@@ -1,6 +1,6 @@
 # Khan Academy PyCharm Plugin
 
-This is a plugin for the PyCharm IDE intended to be used by developers working at Khan Academy.
+A plugin for the PyCharm IDE intended to be used by developers working at Khan Academy.
 
 Currently, it has one feature:
 
