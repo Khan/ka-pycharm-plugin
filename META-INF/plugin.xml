@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>org.khanacademy.pycharmplugin</id>
   <name>Khan Academy PyCharm Plugin</name>
-  <version>1.0</version>
+  <version>1.0.1</version>
 
   <description><![CDATA[
       <p>PyCharm plugin for developers at Khan Academy.</p>

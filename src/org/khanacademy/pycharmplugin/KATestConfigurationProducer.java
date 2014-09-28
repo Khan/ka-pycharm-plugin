@@ -3,6 +3,7 @@ package org.khanacademy.pycharmplugin;
 import com.google.common.collect.ImmutableMap;
 import com.intellij.execution.Location;
 import com.intellij.execution.actions.ConfigurationContext;
+import com.intellij.openapi.module.Module;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.Ref;
 import com.intellij.openapi.vfs.VirtualFile;
@@ -68,7 +69,11 @@ public class KATestConfigurationProducer extends PythonUnitTestConfigurationProd
             ConfigurationContext context,
             Ref<PsiElement> sourceElement) {
         // Disable other Unittest menu items; see the isAvailable javadoc.
-        TestRunnerService.getInstance(context.getModule()).setProjectConfiguration("KAUnittests");
+        Module module = context.getModule();
+        if (module == null) {
+            return false;
+        }
+        TestRunnerService.getInstance(module).setProjectConfiguration("KAUnittests");
 
         boolean result = super.setupConfigurationFromContext(
                 configuration, context, sourceElement);
